@@ -36,6 +36,12 @@
       text-align: center;
       font-weight: 700;
     }
+    h2 {
+      color: #f1f5f9;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      font-weight: 700;
+    }
 
     .container {
       width: 90%;
@@ -298,6 +304,8 @@
       <div class="endpoints">
         <h1>API Documentation</h1>
 
+        <!-- User Endpoints -->
+        <h2>Route Users</h2>
         <div class="endpoint">
           <div class="endpoint-header">
             <span class="method post">POST</span>
@@ -305,7 +313,13 @@
           </div>
           <p class="endpoint-description">Create a new user</p>
           <div class="endpoint-details">
-            <p>Body: <code>{ "name": "string", "email": "string" }</code></p>
+            <p>
+              Body:
+              <code
+                >{ "name": "string", "email": "string", "password": "string"
+                }</code
+              >
+            </p>
           </div>
         </div>
 
@@ -336,7 +350,13 @@
           <p class="endpoint-description">Update a user</p>
           <div class="endpoint-details">
             <p>URL params: <code>id</code> (required)</p>
-            <p>Body: <code>{ "name": "string", "email": "string" }</code></p>
+            <p>
+              Body:
+              <code
+                >{ "name": "string", "email": "string", "password": "string"
+                }</code
+              >
+            </p>
           </div>
         </div>
 
@@ -346,6 +366,209 @@
             <span class="route">/users/:id</span>
           </div>
           <p class="endpoint-description">Delete a user</p>
+          <div class="endpoint-details">
+            <p>URL params: <code>id</code> (required)</p>
+          </div>
+        </div>
+
+        <!-- Blog Endpoints -->
+        <h2>Route Blogs</h2>
+        <div class="endpoint">
+          <div class="endpoint-header">
+            <span class="method post">POST</span>
+            <span class="route">/blogs</span>
+          </div>
+          <p class="endpoint-description">Create a new blog post</p>
+          <div class="endpoint-details">
+            <p>
+              Body:
+              <code
+                >{ "title": "string", "content": "string", "authorId": "number",
+                "published": "boolean" }</code
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="endpoint">
+          <div class="endpoint-header">
+            <span class="method get">GET</span>
+            <span class="route">/blogs</span>
+          </div>
+          <p class="endpoint-description">Get the list of all blog posts</p>
+        </div>
+
+        <div class="endpoint">
+          <div class="endpoint-header">
+            <span class="method get">GET</span>
+            <span class="route">/blogs/:id</span>
+          </div>
+          <p class="endpoint-description">Get a specific blog post by ID</p>
+          <div class="endpoint-details">
+            <p>URL params: <code>id</code> (required)</p>
+          </div>
+        </div>
+
+        <div class="endpoint">
+          <div class="endpoint-header">
+            <span class="method put">PUT</span>
+            <span class="route">/blogs/:id</span>
+          </div>
+          <p class="endpoint-description">Update a blog post</p>
+          <div class="endpoint-details">
+            <p>URL params: <code>id</code> (required)</p>
+            <p>
+              Body:
+              <code
+                >{ "title": "string", "content": "string", "published":
+                "boolean" }</code
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="endpoint">
+          <div class="endpoint-header">
+            <span class="method delete">DELETE</span>
+            <span class="route">/blogs/:id</span>
+          </div>
+          <p class="endpoint-description">Delete a blog post</p>
+          <div class="endpoint-details">
+            <p>URL params: <code>id</code> (required)</p>
+          </div>
+        </div>
+
+        <!-- Manga Endpoints -->
+        <h2>Route Manga</h2>
+        <div class="endpoint">
+          <div class="endpoint-header">
+            <span class="method post">POST</span>
+            <span class="route">/mangas</span>
+          </div>
+          <p class="endpoint-description">Create a new manga</p>
+          <div class="endpoint-details">
+            <p>
+              Body:
+              <code
+                >{ "title": "string", "author": "string", "description":
+                "string", "price": "number", "stock": "number" }</code
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="endpoint">
+          <div class="endpoint-header">
+            <span class="method get">GET</span>
+            <span class="route">/mangas</span>
+          </div>
+          <p class="endpoint-description">Get the list of all mangas</p>
+        </div>
+
+        <div class="endpoint">
+          <div class="endpoint-header">
+            <span class="method get">GET</span>
+            <span class="route">/mangas/:id</span>
+          </div>
+          <p class="endpoint-description">Get a specific manga by ID</p>
+          <div class="endpoint-details">
+            <p>URL params: <code>id</code> (required)</p>
+          </div>
+        </div>
+
+        <div class="endpoint">
+          <div class="endpoint-header">
+            <span class="method put">PUT</span>
+            <span class="route">/mangas/:id</span>
+          </div>
+          <p class="endpoint-description">Update a manga</p>
+          <div class="endpoint-details">
+            <p>URL params: <code>id</code> (required)</p>
+            <p>
+              Body:
+              <code
+                >{ "title": "string", "author": "string", "description":
+                "string", "price": "number", "stock": "number" }</code
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="endpoint">
+          <div class="endpoint-header">
+            <span class="method delete">DELETE</span>
+            <span class="route">/mangas/:id</span>
+          </div>
+          <p class="endpoint-description">Delete a manga</p>
+          <div class="endpoint-details">
+            <p>URL params: <code>id</code> (required)</p>
+          </div>
+        </div>
+
+        <!-- Anime Endpoints -->
+        <h2>Route Animes</h2>
+        <div class="endpoint">
+          <div class="endpoint-header">
+            <span class="method post">POST</span>
+            <span class="route">/animes</span>
+          </div>
+          <p class="endpoint-description">Create a new anime</p>
+          <div class="endpoint-details">
+            <p>
+              Body:
+              <code
+                >{ "title": "string", "studio": "string", "episodes": "number",
+                "description": "string", "price": "number", "stock": "number"
+                }</code
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="endpoint">
+          <div class="endpoint-header">
+            <span class="method get">GET</span>
+            <span class="route">/animes</span>
+          </div>
+          <p class="endpoint-description">Get the list of all animes</p>
+        </div>
+
+        <div class="endpoint">
+          <div class="endpoint-header">
+            <span class="method get">GET</span>
+            <span class="route">/animes/:id</span>
+          </div>
+          <p class="endpoint-description">Get a specific anime by ID</p>
+          <div class="endpoint-details">
+            <p>URL params: <code>id</code> (required)</p>
+          </div>
+        </div>
+
+        <div class="endpoint">
+          <div class="endpoint-header">
+            <span class="method put">PUT</span>
+            <span class="route">/animes/:id</span>
+          </div>
+          <p class="endpoint-description">Update an anime</p>
+          <div class="endpoint-details">
+            <p>URL params: <code>id</code> (required)</p>
+            <p>
+              Body:
+              <code
+                >{ "title": "string", "studio": "string", "episodes": "number",
+                "description": "string", "price": "number", "stock": "number"
+                }</code
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="endpoint">
+          <div class="endpoint-header">
+            <span class="method delete">DELETE</span>
+            <span class="route">/animes/:id</span>
+          </div>
+          <p class="endpoint-description">Delete an anime</p>
           <div class="endpoint-details">
             <p>URL params: <code>id</code> (required)</p>
           </div>
