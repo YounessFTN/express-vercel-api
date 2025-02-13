@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://www.svgrepo.com/show/327408/logo-vercel.svg"
+      type="image/gif"
+      sizes="16x16"
+    />
     <title>API Documentation</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
@@ -41,6 +47,10 @@
       font-size: 2.5rem;
       margin-bottom: 2rem;
       font-weight: 700;
+    }
+    a {
+      text-decoration: none;
+      border-bottom: white 2px solid;
     }
 
     .container {
@@ -309,7 +319,9 @@
         <div class="endpoint">
           <div class="endpoint-header">
             <span class="method post">POST</span>
-            <span class="route">/users</span>
+            <a href="https://express-vercel-api-six.vercel.app/users">
+              <span class="route">/users</span>
+            </a>
           </div>
           <p class="endpoint-description">Create a new user</p>
           <div class="endpoint-details">
@@ -326,7 +338,9 @@
         <div class="endpoint">
           <div class="endpoint-header">
             <span class="method get">GET</span>
-            <span class="route">/users</span>
+            <a href="https://express-vercel-api-six.vercel.app/users">
+              <span class="route">/users</span>
+            </a>
           </div>
           <p class="endpoint-description">Get the list of all users</p>
         </div>
@@ -334,7 +348,9 @@
         <div class="endpoint">
           <div class="endpoint-header">
             <span class="method get">GET</span>
-            <span class="route">/users/:id</span>
+            <a href="https://express-vercel-api-six.vercel.app/users/1">
+              <span class="route">/users/:id</span>
+            </a>
           </div>
           <p class="endpoint-description">Get a specific user by ID</p>
           <div class="endpoint-details">
@@ -345,7 +361,9 @@
         <div class="endpoint">
           <div class="endpoint-header">
             <span class="method put">PUT</span>
-            <span class="route">/users/:id</span>
+            <a href="https://express-vercel-api-six.vercel.app/users/1">
+              <span class="route">/users/:id</span>
+            </a>
           </div>
           <p class="endpoint-description">Update a user</p>
           <div class="endpoint-details">
@@ -363,7 +381,9 @@
         <div class="endpoint">
           <div class="endpoint-header">
             <span class="method delete">DELETE</span>
-            <span class="route">/users/:id</span>
+            <a href="https://express-vercel-api-six.vercel.app/users/1">
+              <span class="route">/users/:id</span>
+            </a>
           </div>
           <p class="endpoint-description">Delete a user</p>
           <div class="endpoint-details">
@@ -376,7 +396,9 @@
         <div class="endpoint">
           <div class="endpoint-header">
             <span class="method post">POST</span>
-            <span class="route">/blogs</span>
+            <a href="https://express-vercel-api-six.vercel.app/blogs">
+              <span class="route">/blogs</span>
+            </a>
           </div>
           <p class="endpoint-description">Create a new blog post</p>
           <div class="endpoint-details">
@@ -393,7 +415,9 @@
         <div class="endpoint">
           <div class="endpoint-header">
             <span class="method get">GET</span>
-            <span class="route">/blogs</span>
+            <a href="https://express-vercel-api-six.vercel.app/blogs">
+              <span class="route">/blogs</span>
+            </a>
           </div>
           <p class="endpoint-description">Get the list of all blog posts</p>
         </div>
@@ -401,7 +425,9 @@
         <div class="endpoint">
           <div class="endpoint-header">
             <span class="method get">GET</span>
-            <span class="route">/blogs/:id</span>
+            <a href="https://express-vercel-api-six.vercel.app/blogs/1">
+              <span class="route">/blogs/:id</span>
+            </a>
           </div>
           <p class="endpoint-description">Get a specific blog post by ID</p>
           <div class="endpoint-details">
@@ -412,7 +438,9 @@
         <div class="endpoint">
           <div class="endpoint-header">
             <span class="method put">PUT</span>
-            <span class="route">/blogs/:id</span>
+            <a href="https://express-vercel-api-six.vercel.app/blogs/1">
+              <span class="route">/blogs/:id</span>
+            </a>
           </div>
           <p class="endpoint-description">Update a blog post</p>
           <div class="endpoint-details">
@@ -430,7 +458,9 @@
         <div class="endpoint">
           <div class="endpoint-header">
             <span class="method delete">DELETE</span>
-            <span class="route">/blogs/:id</span>
+            <a href="https://express-vercel-api-six.vercel.app/blogs/1">
+              <span class="route">/blogs/:id</span>
+            </a>
           </div>
           <p class="endpoint-description">Delete a blog post</p>
           <div class="endpoint-details">
@@ -443,7 +473,9 @@
         <div class="endpoint">
           <div class="endpoint-header">
             <span class="method post">POST</span>
-            <span class="route">/mangas</span>
+            <a href="https://express-vercel-api-six.vercel.app/mangas">
+              <span class="route">/mangas</span>
+            </a>
           </div>
           <p class="endpoint-description">Create a new manga</p>
           <div class="endpoint-details">
@@ -460,7 +492,9 @@
         <div class="endpoint">
           <div class="endpoint-header">
             <span class="method get">GET</span>
-            <span class="route">/mangas</span>
+            <a href="https://express-vercel-api-six.vercel.app/mangas">
+              <span class="route">/mangas</span>
+            </a>
           </div>
           <p class="endpoint-description">Get the list of all mangas</p>
         </div>
@@ -468,7 +502,9 @@
         <div class="endpoint">
           <div class="endpoint-header">
             <span class="method get">GET</span>
-            <span class="route">/mangas/:id</span>
+            <a href="https://express-vercel-api-six.vercel.app/mangas/1">
+              <span class="route">/mangas/:id</span>
+            </a>
           </div>
           <p class="endpoint-description">Get a specific manga by ID</p>
           <div class="endpoint-details">
@@ -479,7 +515,9 @@
         <div class="endpoint">
           <div class="endpoint-header">
             <span class="method put">PUT</span>
-            <span class="route">/mangas/:id</span>
+            <a href="https://express-vercel-api-six.vercel.app/mangas/1">
+              <span class="route">/mangas/:id</span>
+            </a>
           </div>
           <p class="endpoint-description">Update a manga</p>
           <div class="endpoint-details">
@@ -497,7 +535,9 @@
         <div class="endpoint">
           <div class="endpoint-header">
             <span class="method delete">DELETE</span>
-            <span class="route">/mangas/:id</span>
+            <a href="https://express-vercel-api-six.vercel.app/mangas/1">
+              <span class="route">/mangas/:id</span>
+            </a>
           </div>
           <p class="endpoint-description">Delete a manga</p>
           <div class="endpoint-details">
@@ -510,7 +550,9 @@
         <div class="endpoint">
           <div class="endpoint-header">
             <span class="method post">POST</span>
-            <span class="route">/animes</span>
+            <a href="https://express-vercel-api-six.vercel.app/animes">
+              <span class="route">/animes</span>
+            </a>
           </div>
           <p class="endpoint-description">Create a new anime</p>
           <div class="endpoint-details">
@@ -528,7 +570,9 @@
         <div class="endpoint">
           <div class="endpoint-header">
             <span class="method get">GET</span>
-            <span class="route">/animes</span>
+            <a href="https://express-vercel-api-six.vercel.app/animes">
+              <span class="route">/animes</span>
+            </a>
           </div>
           <p class="endpoint-description">Get the list of all animes</p>
         </div>
@@ -536,7 +580,9 @@
         <div class="endpoint">
           <div class="endpoint-header">
             <span class="method get">GET</span>
-            <span class="route">/animes/:id</span>
+            <a href="https://express-vercel-api-six.vercel.app/animes/1">
+              <span class="route">/animes/:id</span>
+            </a>
           </div>
           <p class="endpoint-description">Get a specific anime by ID</p>
           <div class="endpoint-details">
@@ -547,7 +593,9 @@
         <div class="endpoint">
           <div class="endpoint-header">
             <span class="method put">PUT</span>
-            <span class="route">/animes/:id</span>
+            <a href="https://express-vercel-api-six.vercel.app/animes/1">
+              <span class="route">/animes/:id</span>
+            </a>
           </div>
           <p class="endpoint-description">Update an anime</p>
           <div class="endpoint-details">
@@ -566,7 +614,9 @@
         <div class="endpoint">
           <div class="endpoint-header">
             <span class="method delete">DELETE</span>
-            <span class="route">/animes/:id</span>
+            <a href="https://express-vercel-api-six.vercel.app/animes/1">
+              <span class="route">/animes/:id</span>
+            </a>
           </div>
           <p class="endpoint-description">Delete an anime</p>
           <div class="endpoint-details">
