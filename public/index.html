@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Documentation</title>
+    <link href="https://express-vercel-api-six.vercel.app/" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #181818;
+        color: #e1e1e1;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      h1 {
+        font-size: 2.5em;
+        color: #f4f4f4;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .endpoints {
+        width: 100%;
+        max-width: 900px;
+        padding: 20px;
+        background-color: #242424;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+      .endpoint {
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #2c2c2c;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .endpoint:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+      .method {
+        display: inline-block;
+        padding: 8px 15px;
+        border-radius: 5px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+        margin-right: 15px;
+        font-size: 1em;
+      }
+      .get {
+        background-color: #61affe;
+      }
+      .post {
+        background-color: #49cc90;
+      }
+      .put {
+        background-color: #fca130;
+      }
+      .delete {
+        background-color: #f93e3e;
+      }
+      .route {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 1.2em;
+        color: #f4f4f4;
+      }
+      p {
+        color: #bbb;
+        font-size: 1.1em;
+        margin-top: 5px;
+      }
+      a {
+        color: #49cc90;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="endpoints">
+      <h1>API Documentation</h1>
+      <div class="endpoint">
+        <span class="method post">POST</span>
+        <span class="route"
+          ><a href="https://express-vercel-api-six.vercel.app/users"
+            >/users</a
+          ></span
+        >
+        <p>Créer un nouvel utilisateur</p>
+      </div>
+
+      <div class="endpoint">
+        <span class="method get">GET</span>
+        <span class="route"
+          ><a href="https://express-vercel-api-six.vercel.app/users"
+            >/users</a
+          ></span
+        >
+        <p>Obtenir la liste de tous les utilisateurs</p>
+      </div>
+
+      <div class="endpoint">
+        <span class="method get">GET</span>
+        <span class="route"
+          ><a href="https://express-vercel-api-six.vercel.app/users/1"
+            >/users/:id</a
+          ></span
+        >
+        <p>Obtenir un utilisateur spécifique par son ID</p>
+      </div>
+
+      <div class="endpoint">
+        <span class="method put">PUT</span>
+        <span class="route"
+          ><a href="https://express-vercel-api-six.vercel.app/users/1"
+            >/users/:id</a
+          ></span
+        >
+        <p>Mettre à jour un utilisateur</p>
+      </div>
+
+      <div class="endpoint">
+        <span class="method delete">DELETE</span>
+        <span class="route"
+          ><a href="https://express-vercel-api-six.vercel.app/users/1"
+            >/users/:id</a
+          ></span
+        >
+        <p>Supprimer un utilisateur</p>
+      </div>
+    </div>
+  </body>
+</html>
