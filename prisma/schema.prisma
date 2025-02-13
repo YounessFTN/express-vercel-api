@@ -16,12 +16,11 @@ model User {
   password  String   // Stores the hashed password
   name      String?
   blogs     Blog[]
-}
-
-model Blog {
+}model Blog {
   id        Int      @id @default(autoincrement())
   title     String
   content   String
+  image     String?  // URL de l'image du blog
   published Boolean  @default(false)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -34,6 +33,7 @@ model Manga {
   title       String   @unique
   author      String
   description String?
+  image       String?  // URL de l'image du manga
   price       Decimal  @db.Decimal(10, 2)
   stock       Int      @default(0)
   createdAt   DateTime @default(now())
@@ -46,6 +46,7 @@ model Anime {
   studio      String
   episodes    Int
   description String?
+  image       String?  // URL de l'image de l'anime
   price       Decimal  @db.Decimal(10, 2)
   stock       Int      @default(0)
   createdAt   DateTime @default(now())
